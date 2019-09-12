@@ -7,6 +7,7 @@ storiesOf('Select', module)
   .addDecorator(withKnobs)
   .add('create a Select', () =>
     <Select legend={text('legend', 'Please select')}
+            value={text('value', '333')}
             options={object('options', [
               {label: 'aaa', value: '111'},
               {label: 'bbb', value: '222'},
